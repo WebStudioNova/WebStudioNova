@@ -18,11 +18,18 @@ const HomePage: React.FC = () => {
       <section className="min-h-screen flex items-center relative">
         <div className="container mx-auto px-6">
           <AnimateOnScroll>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-extrabold text-white leading-none">
-              {t('home_hero_l1')}<br />
-              <span className="text-brand-red">{t('home_hero_l2')}</span><br />
-              {t('home_hero_l3')}
-            </h1>
+            <h1 className="font-display font-extrabold text-white leading-tight">
+  <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+    {t('home_hero_l1')}
+  </span>
+  <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-brand-red">
+    {t('home_hero_l2')}
+  </span>
+  <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+    {t('home_hero_l3')}
+  </span>
+</h1>
+
           </AnimateOnScroll>
           <AnimateOnScroll delay={100}>
             <p className="text-lg md:text-xl text-gray-300 max-w-2xl mt-8">
