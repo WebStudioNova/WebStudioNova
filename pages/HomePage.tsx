@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PageWrapper from '../components/PageWrapper';
@@ -7,19 +8,9 @@ import AnimateOnScroll from '../components/AnimateOnScroll';
 import { useTranslation } from '../hooks/useTranslation';
 
 const HomePage: React.FC = () => {
-  const { t, language } = useTranslation();
+  const { t } = useTranslation();
   const featuredProjects = PROJECTS.filter(p => p.status === 'completed').slice(0, 3);
   const highlightedServices = SERVICES.slice(0, 4);
-
-  const isBosnian = language === 'ba';
-
-  const heroLine12Class = isBosnian
-    ? 'block text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl'
-    : 'block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl';
-
-  const heroLine3Class = isBosnian
-    ? 'block text-xl sm:text-3xl md:text-6xl lg:text-8xl xl:text-9xl'
-    : 'block text-2xl sm:text-4xl md:text-7xl lg:text-8xl xl:text-9xl';
 
   return (
     <PageWrapper className="!py-0">
@@ -28,13 +19,13 @@ const HomePage: React.FC = () => {
         <div className="container mx-auto px-6">
           <AnimateOnScroll>
             <h1 className="font-display font-extrabold text-white leading-tight">
-              <span className={heroLine3Class}>
+              <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
                 {t('home_hero_l1')}
               </span>
-              <span className={`${heroLine12Class} text-brand-red`}>
+              <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-brand-red">
                 {t('home_hero_l2')}
               </span>
-              <span className={heroLine12Class}>
+              <span className="block text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl">
                 {t('home_hero_l3')}
               </span>
             </h1>
