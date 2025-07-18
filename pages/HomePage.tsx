@@ -12,6 +12,16 @@ const HomePage: React.FC = () => {
   const featuredProjects = PROJECTS.filter(p => p.status === 'completed').slice(0, 3);
   const highlightedServices = SERVICES.slice(0, 4);
 
+  const isBosnian = language === 'ba';
+
+  const heroLine12Class = isBosnian
+    ? 'block text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl'
+    : 'block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl';
+
+  const heroLine3Class = isBosnian
+    ? 'block text-xl sm:text-3xl md:text-6xl lg:text-8xl xl:text-9xl'
+    : 'block text-2xl sm:text-4xl md:text-7xl lg:text-8xl xl:text-9xl';
+
   return (
     <PageWrapper className="!py-0">
       {/* Hero Section */}
