@@ -42,6 +42,12 @@ export default function ContactPage() {
               </a>
             </div>
             <div>
+  <h3 className="text-gray-500 uppercase tracking-widest font-bold text-sm">{t('contact_call_us')}</h3>
+  <a href={`tel:${CONTACT_INFO.phone}`} className="text-brand-light hover:text-brand-red transition-colors text-2xl font-medium">
+    {CONTACT_INFO.phone}
+  </a>
+</div>
+            <div>
               <h3 className="text-gray-500 uppercase tracking-widest font-bold text-sm">{t('contact_follow_us')}</h3>
               <div className="flex space-x-6 mt-2">
                 <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-brand-light hover:text-brand-red transition-colors text-xl font-medium">Facebook</a>

@@ -201,6 +201,7 @@ Zato naš rad ne završava dostavom stranice – on počinje stvaranjem partners
   contact_title: { en: "Having a problem?", ba: "Imate problem?" },
   contact_desc: { en: "We bring the solution. Whether your brand is stuck or your website doesn’t deliver, we step in to build what works. Ready to fix it? Let's talk.", ba: "Mi donosimo rješenje. Bilo da je vaš brend zapeo ili vaša web stranica ne donosi rezultate, mi uskačemo da izgradimo ono što radi. Spremni da to popravite? Razgovarajmo." },
   contact_email_us: { en: 'Email Us', ba: 'Pošaljite nam email' },
+  contact_call_us: { en: 'Call Us', ba: 'Pozovite nas' },
   contact_follow_us: { en: 'Follow Us', ba: 'Pratite nas' },
   contact_form_title: { en: 'Tell us about your project', ba: 'Recite nam o svom projektu' },
   contact_form_name: { en: 'Name', ba: 'Ime' },
