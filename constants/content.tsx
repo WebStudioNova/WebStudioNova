@@ -248,7 +248,7 @@ export const SOCIAL_LINKS = {
 };
 
 export const CONTACT_INFO = {
-    email: 'business.studio.nova@gmail.com',
+    email: 'info@webstudionova.com',
     phone: '+387 61 000 000',
 };
 
