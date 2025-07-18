@@ -26,8 +26,8 @@ const HomePage: React.FC = () => {
     // For English: "WE BUILD" and "DIGITAL" are large on all screens.
     line1Class = 'block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl';
     line2Class = 'block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl';
-    // "LANDMARKS." is smaller on mobile/tablet, but the same large size on desktop.
-    line3Class = 'block text-3xl sm:text-4xl md:text-5xl lg:text-8xl xl:text-9xl';
+    // "LANDMARKS." is now significantly smaller on all screen sizes for emphasis.
+    line3Class = 'block text-2xl sm:text-3xl md:text-4xl lg:text-7xl xl:text-8xl';
   }
 
   return (
