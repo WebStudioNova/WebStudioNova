@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PageWrapper from '../components/PageWrapper';
@@ -8,7 +7,7 @@ import AnimateOnScroll from '../components/AnimateOnScroll';
 import { useTranslation } from '../hooks/useTranslation';
 
 const HomePage: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const featuredProjects = PROJECTS.filter(p => p.status === 'completed').slice(0, 3);
   const highlightedServices = SERVICES.slice(0, 4);
 
@@ -28,14 +27,14 @@ const HomePage: React.FC = () => {
       <section className="min-h-screen flex items-center relative">
         <div className="container mx-auto px-6">
           <AnimateOnScroll>
-             <h1 className="font-display font-extrabold text-white leading-tight">
-              <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+            <h1 className="font-display font-extrabold text-white leading-tight">
+              <span className={heroLine12Class}>
                 {t('home_hero_l1')}
               </span>
-              <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-brand-red">
+              <span className={`${heroLine12Class} text-brand-red`}>
                 {t('home_hero_l2')}
               </span>
-              <span className="block text-2xl sm:text-4xl md:text-7xl lg:text-8xl xl:text-9xl">
+              <span className={heroLine3Class}>
                 {t('home_hero_l3')}
               </span>
             </h1>
