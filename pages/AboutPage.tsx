@@ -12,7 +12,7 @@ const AboutPage: React.FC = () => {
       <div className="max-w-5xl mx-auto">
         <AnimateOnScroll className="text-center">
           <p className="text-brand-red font-bold uppercase tracking-widest">{t('about_philosophy')}</p>
-          <h1 className="text-5xl md:text-7xl font-display font-extrabold text-white mt-4">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-extrabold text-white mt-4">
             {t('about_title')}
           </h1>
         </AnimateOnScroll>
@@ -33,7 +33,7 @@ const AboutPage: React.FC = () => {
         </div>
 
         <AnimateOnScroll className="mt-32">
-          <h2 className="text-4xl font-display font-bold text-white text-center mb-12">{t('about_principles_title')}</h2>
+          <h2 className="text-3xl sm:text-4xl font-display font-bold text-white text-center mb-12">{t('about_principles_title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
             <Principle title={t('about_principle1_title')} description={t('about_principle1_desc')} />
             <Principle title={t('about_principle2_title')} description={t('about_principle2_desc')} />
@@ -42,7 +42,7 @@ const AboutPage: React.FC = () => {
         </AnimateOnScroll>
         
         <AnimateOnScroll className="text-center mt-32 bg-brand-red rounded-lg p-12">
-            <h2 className="text-4xl font-display font-bold text-brand-dark">{t('about_cta_title')}</h2>
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-brand-dark">{t('about_cta_title')}</h2>
             <p className="text-brand-dark/80 mt-4 max-w-2xl mx-auto">{t('about_cta_desc')}</p>
             <Link
                 to="/contact"
