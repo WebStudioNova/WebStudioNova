@@ -18,10 +18,10 @@ const HomePage: React.FC = () => {
   let line3Class: string;
 
   if (isBosnian) {
-    // For Bosnian: 'MI GRADIMO' is small, 'DIGITALNE' and 'ORIJENTIRE.' are medium.
-    line1Class = 'block text-xl sm:text-3xl md:text-6xl lg:text-8xl xl:text-9xl';
-    line2Class = 'block text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl';
-    line3Class = 'block text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl';
+    // Reduced overall font size for Bosnian version as per user request.
+    line1Class = 'block text-lg sm:text-2xl md:text-5xl lg:text-7xl xl:text-8xl';
+    line2Class = 'block text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl';
+    line3Class = 'block text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl';
   } else {
     // For English: "WE BUILD" and "DIGITAL" are large on all screens.
     line1Class = 'block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl';
