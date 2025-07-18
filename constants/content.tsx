@@ -249,7 +249,7 @@ export const SOCIAL_LINKS = {
 
 export const CONTACT_INFO = {
     email: 'info@webstudionova.com',
-    phone: '+387 61 000 000',
+    phone: '+387 62 360 700',
 };
 
 export const FacebookIcon = (props: React.SVGProps<SVGSVGElement>) => (
