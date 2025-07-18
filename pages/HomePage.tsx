@@ -28,13 +28,13 @@ const HomePage: React.FC = () => {
         <div className="container mx-auto px-6">
           <AnimateOnScroll>
             <h1 className="font-display font-extrabold text-white leading-tight">
-              <span className={heroLine12Class}>
+              <span className={heroLine3Class}>
                 {t('home_hero_l1')}
               </span>
               <span className={`${heroLine12Class} text-brand-red`}>
                 {t('home_hero_l2')}
               </span>
-              <span className={heroLine3Class}>
+              <span className={heroLine12Class}>
                 {t('home_hero_l3')}
               </span>
             </h1>
