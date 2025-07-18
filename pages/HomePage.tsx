@@ -13,13 +13,22 @@ const HomePage: React.FC = () => {
 
   const isBosnian = language === 'ba';
 
-  const heroLine12Class = isBosnian
-    ? 'block text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl'
-    : 'block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl';
+  let line1Class: string;
+  let line2Class: string;
+  let line3Class: string;
 
-  const heroLine3Class = isBosnian
-    ? 'block text-xl sm:text-3xl md:text-6xl lg:text-8xl xl:text-9xl'
-    : 'block text-2xl sm:text-4xl md:text-7xl lg:text-8xl xl:text-9xl';
+  if (isBosnian) {
+    // For Bosnian: 'MI GRADIMO' is small, 'DIGITALNE' and 'ORIJENTIRE.' are medium.
+    line1Class = 'block text-xl sm:text-3xl md:text-6xl lg:text-8xl xl:text-9xl';
+    line2Class = 'block text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl';
+    line3Class = 'block text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl';
+  } else {
+    // For English: "WE BUILD" and "DIGITAL" are large on all screens.
+    line1Class = 'block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl';
+    line2Class = 'block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl';
+    // "LANDMARKS." is smaller on mobile/tablet, but the same large size on desktop.
+    line3Class = 'block text-3xl sm:text-4xl md:text-5xl lg:text-8xl xl:text-9xl';
+  }
 
   return (
     <PageWrapper className="!py-0">
@@ -28,13 +37,13 @@ const HomePage: React.FC = () => {
         <div className="container mx-auto px-6">
           <AnimateOnScroll>
             <h1 className="font-display font-extrabold text-white leading-tight">
-              <span className={heroLine3Class}>
+              <span className={line1Class}>
                 {t('home_hero_l1')}
               </span>
-              <span className={`${heroLine12Class} text-brand-red`}>
+              <span className={`${line2Class} text-brand-red`}>
                 {t('home_hero_l2')}
               </span>
-              <span className={heroLine12Class}>
+              <span className={line3Class}>
                 {t('home_hero_l3')}
               </span>
             </h1>
