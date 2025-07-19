@@ -30,6 +30,12 @@ const HomePage: React.FC = () => {
     line3Class = 'block text-2xl sm:text-3xl md:text-4xl lg:text-7xl xl:text-8xl';
   }
 
+  const heroCtaClass = `bg-brand-red text-white font-bold rounded-full hover:bg-white hover:text-brand-dark transition-all duration-300 transform hover:scale-105 ${
+    isBosnian 
+      ? 'py-3 px-6 text-base md:py-4 md:px-10 md:text-lg' 
+      : 'py-4 px-10 text-lg'
+  }`;
+
   return (
     <PageWrapper className="!py-0">
       {/* Hero Section */}
@@ -57,7 +63,7 @@ const HomePage: React.FC = () => {
             <div className="mt-12">
               <Link
                 to="/projects"
-                className="bg-brand-red text-white font-bold py-4 px-10 rounded-full hover:bg-white hover:text-brand-dark transition-all duration-300 transform hover:scale-105 text-lg"
+                className={heroCtaClass}
               >
                 {t('home_hero_cta')}
               </Link>
