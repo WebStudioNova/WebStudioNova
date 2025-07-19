@@ -88,7 +88,7 @@ export const PROJECTS: Project[] = [
     title: 'project_sanametall_title',
     client: 'Sana Metall',
     category: 'project_sanametall_category',
-    imageUrl: '/images/projekti/sanametall/sanametall-screenshot.png',
+    imageUrl: '/images/projekti/sanametall/sanametall.gif',
     galleryImages: [
   '/images/projekti/sanametall/sanametall-screenshot.png',
   '/images/projekti/sanametall/sanametall-screenshot-2.png',
