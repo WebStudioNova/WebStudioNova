@@ -89,10 +89,10 @@ export const PROJECTS: Project[] = [
     client: 'Sana Metall',
     category: 'project_sanametall_category',
     imageUrl: '/images/projekti/sanametall/sanametall-screenshot.jpg',
-    galleryImages: [  // Dodao galeriju slika
-      'public/images/projekti/sanametall/sanametall-screenshot.jpg',
-      'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    galleryImages: [
+  '/images/projekti/sanametall/sanametall-screenshot.jpg',
+  'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     ],
     problem: 'project_sanametall_problem',
     process: 'project_sanametall_process',
